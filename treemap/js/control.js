@@ -10,7 +10,7 @@ $( document ).ready(function() {
 		// To do this change d.grand_parent, d.parent and d.child to the column titles in the order you wish to nest them, e.g. d.column_1, d.column_2 etc.
 		// NOTE: Your column titles cannot contain spaces.
 		var nested_data = d3.nest()
-			.key(function(d)  { return d.destination; })
+			.key(function(d)  { return d.Destination; })
 			.key(function(d)  { return d.Supplier_name; })
 			.key(function(d)  { return d.Ticket_class_description; })
 			.entries(csv_data);
